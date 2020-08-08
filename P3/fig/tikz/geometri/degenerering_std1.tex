@@ -1,0 +1,63 @@
+\begin{minipage}[b]{0.45\textwidth}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Flot graf alla Julie     %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+\begin{center}
+\begin{tikzpicture}[scale=6]
+%
+% Koordinater 
+% ------------------------------------------------------
+\coordinate (a) at (0.1,0.1,-0.1);
+\coordinate (b) at (0.5,0.1,-0.1);
+\coordinate (a1) at (0.075,0.05,-0.1);
+\coordinate (b1) at (0.525,0.05,-0.1);
+\coordinate (a2) at (0.05,0.1,-0.1);
+\coordinate (b2) at (0.55,0.1,-0.1);
+\coordinate (aa) at (0.35,0.6,-0.1);
+\coordinate (bb) at (0.25,0.6,-0.1);
+\coordinate (c) at (0.17,0.5,-0.1);
+\coordinate (d) at (0.43,0.5,-0.1);
+\coordinate (e) at (0.3,0.5,-0.1);
+%
+% Polyeden
+% -------------------------------------------------------
+\filldraw [fill=myblue,opacity=0.5] 
+         (a) -- (b) -- (e) -- (a);
+%        
+% Streger 
+% -------------------------------------------------------
+  \draw[thick](d)--(c);
+  \draw[thick](a)--(b)--(e)--(a);
+  \draw[thick](e)--(aa);
+  \draw[thick](e)--(bb);
+  \draw[thick](b)--(b1);
+  \draw[thick](a)--(a1);
+  \draw[thick](b)--(b2);
+  \draw[thick](a)--(a2);
+%
+%
+% Punkt 
+% -------------------------------------------------------
+\filldraw [black] (e) circle (0.2pt);
+\node at (0.3,0.6,-0.1) (){$\mathbf{v}$};
+\node at (0.6 ,0.5,-0.1) (){$\mathbf{a}_1 \mathbf{x} = b_1$};
+\filldraw [black] (0,0,0.5) circle (0.pt);
+% 
+% 
+%
+% Koordinatsystemet 
+% -------------------------------------------------------
+\draw[thick,->] (0,0,0) -- (0.9,0,0) node[anchor=south east]{$x$};
+\draw[thick] (0,0,0) -- (-0.1,0,0);
+\draw[thick,->] (0,0,0) -- (0,0.7,0) node[anchor=north west]{$y$};
+\draw[thick] (0,0,0) -- (0,-0.1,0);
+%
+\end{tikzpicture}
+  \captionof{figure}{En overflødig aktiv betingelse $\mathbf{a}_1 \mathbf{x} = b_1$, som medfører, at $\mathbf{v}$ er en degenereret basal løsning.\\}
+  \label{fig:jegerikkesyg}
+\end{center}
+%
+\end{minipage}
